@@ -1,12 +1,10 @@
 import { ArrowBackOutlined } from '@material-ui/icons'
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './video.css'
 
 export default function Video() {
-  const location = useLocation();
-  const movie = location.movie;
   return (
     <div className='videos'>
       <Link to='/'>

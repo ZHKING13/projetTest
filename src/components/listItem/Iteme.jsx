@@ -2,7 +2,8 @@ import { Add, PlayArrow, ThumbDownAltOutlined, ThumbUpAltOutlined } from '@mater
 import React, { useEffect, useState } from 'react'
 import "./iteme.css"
 import { Link } from 'react-router-dom';
-const axios = require('axios');
+import { axiosInstance } from '../../config';
+import axios from 'axios';
 
 export default function Iteme({index, item}) {
   const [isHover, setIsHover] = useState(false)

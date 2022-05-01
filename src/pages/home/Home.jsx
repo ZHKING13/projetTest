@@ -3,6 +3,7 @@ import Feature from "../../components/features/Feature";
 import List from "../../components/liste/List";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
+import { axiosInstance } from "../../config";
 import axios from "axios";
 function Home({type}) {
   const [lists, setLists] = useState([])
@@ -21,7 +22,7 @@ function Home({type}) {
     }
     getList()
   }, [genre, type])
-  return (
+  return ( 
     
     <div className='home'>
       <Navbar />
